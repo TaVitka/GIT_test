@@ -50,5 +50,37 @@ select {
 
 body {
   min-height: 100vh;
+  color: #ffffff;
 }
 
+.todo__wrapper {
+  max-width: 980px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.todo__top {
+  background-color: #f44336;
+  margin: 35px 25px 40px 35px;
+  padding: 40px;
+
+}
+
+.todo__title {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+.todo__form {
+  display: flex;
+  justify-content: center;
+  flex-basis: 900px;
+}
+
+.todo__form-add,
+.todo__form-btn {
+  border: none;
+  border-radius: 0px;
+}
