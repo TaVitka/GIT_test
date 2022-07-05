@@ -52,20 +52,3 @@ body {
   min-height: 100vh;
 }
 
-
-.box {
-  background-color: pink;
-  max-width: 1200px;
-  width: 100%;
-  margin: 5px auto;
-  padding: 55px;
-}
-
-.box__title {
-  text-align: right;
-  padding: 20px 40px;
-  color: brown;
-  font-size: 80px;
-  text-transform: lowercase;
-  margin-bottom: 100px;
-}

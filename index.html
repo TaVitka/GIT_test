@@ -10,33 +10,40 @@
 <body>
 
 
-  <div class="box">
+  <main class="todo__wrapper">
+    <section class="todo__top">
+      <h1 class="todo__title">My To-Do list</h1>
+      <form class="todo__form">
+        <input class="todo__form-add" id="form-add" type="text" name="form-add-area" placeholder="Title...">
+        <button class="todo__form-btn" type="button">Add</button>
+      </form>
+    </section>
 
-    <h1 class="box__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, doloribus ut facilis, provident magni ipsum dolore sapiente vero vel quam explicabo? Fuga asperiores repellat molestias accusantium, accusamus temporibus quis quibusdam! Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</h1>
+    <section class="todo__body">
+      <ul class="todo__items">
+        <li class="todo__item">
+          <p class="todo__item-text">Done</p>
+        </li>
+        <li class="todo__item">
+          <p class="todo__item-text">Done good</p>
+        </li>
+        <li class="todo__item">
+          <p class="todo__item-text">Done well</p>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-    <ul class="box__items">
-      <li class="box__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      <li class="box__item">Libero dicta a explicabo enim corrupti odit ut.</li>
-      <li class="box__item">Numquam consequuntur dolores voluptatem labore natus laboriosam debitis.</li>
-      <li class="box__item">Perferendis architecto recusandae maiores adipisci, facere velit harum!</li>
-    </ul>
 
 
-    <p class="box__text">
+  <!-- <svg class="icon icon-check">
+    <use xlink:href="#icon-check"></use>
+  </svg>
 
-      <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, odit praesentium! Dolores, iure! Possimus ex vero eos omnis soluta eius dolores temporibus. Accusamus, laboriosam? Harum blanditiis quod ab distinctio? Sit.
-      </span>
+  <svg class="icon icon-x">
+    <use xlink:href="#icon-x"></use>
+  </svg> -->
 
-      <span>Architecto quaerat quos, libero exercitationem repudiandae facere culpa sunt praesentium alias facilis aliquam autem obcaecati quae, fugit asperiores! Vitae soluta consequuntur cupiditate facere quia. Vel incidunt facilis quidem labore eos.
-      </span>
-      
-      <span>Sequi inventore eligendi, vitae doloremque porro iure. Tempore est animi ex ipsa quaerat, voluptas laudantium nostrum, rerum et eum beatae voluptatibus deleniti eligendi reprehenderit laboriosam consequatur sed sapiente quod minus.</span><span>Nesciunt cum quo, nobis aperiam sunt iusto similique repellat tempora in culpa perferendis consectetur suscipit eligendi magnam atque expedita asperiores illum numquam animi est inventore optio obcaecati et? Nam, quasi?
-      </span>
-
-      <span>Laborum voluptas porro sunt. Corporis quis debitis dolorum quas ut, tenetur, delectus at sint consequuntur magnam iste provident placeat saepe ad impedit pariatur dolore, quae quod magni numquam veritatis perferendis.
-      </span>
-    </p>
-  </div>
 
 
   <script src="js/jquery-3.6.0.min.js"></script>
