@@ -61,7 +61,7 @@ body {
 
 .todo__top {
   background-color: #f44336;
-  margin: 35px 25px 40px 35px;
+  margin: 35px 25px 0 35px;
   padding: 40px;
   text-align: center;
 }
@@ -82,6 +82,7 @@ body {
 .todo__form-btn {
   border: none;
   border-radius: 0px;
+  cursor: pointer;
 }
 
 .todo__form-add {
@@ -94,9 +95,59 @@ body {
   max-width: 220px;
   width: 100%;
   font-size: 16px;
+  background-color: #d9d9d9;
+}
+
+.todo__body {
+  margin: 0 25px 40px 35px;
 }
 
 .todo__item {
   color: #000000;
-  padding: ;
+  padding: 30px 20px 30px 45px;
+  position: relative;
+}
+
+.todo__item:nth-child(2n+1) {
+  background-color: #eeeeee;
+}
+.todo__item:nth-child(2n) {
+  background-color: #f9f9f9;
+}
+
+.Layer_1 {
+  display: none;
+}
+
+.Layer_2 {
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.todo__item.todo__item--checked {
+  background-color: #878787;
+  color: #ffffff;
+  text-decoration: line-through;
+}
+
+.todo__item.todo__item--checked .Layer_1 {
+  display: block;
+  width: 20px;
+  height: 15px;
+  fill: #ffffff;
+  position: absolute;
+  top: auto;
+  left: 15px;
+}
+
+.todo__item.todo__item--checked .Layer_2 {
+  fill: #ffffff;
+}
+
+.todo__item-text {
+  cursor: pointer;
 }
