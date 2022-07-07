@@ -36,11 +36,18 @@ function newTask(event) {
 
 function deleteTask(event) {
   let removerBtn = document.getElementsByClassName('todo__delete');
+  let singleTask = document.getElementsByClassName('todo__item');
   
   for (i = 0; i < removerBtn.length; i++) {
     removerBtn[i].onclick = function removeTaskEl() {
     let taskEl = this.parentElement;
     taskEl.remove();
+  }
+};
+
+for (i = 0; i < singleTask.length; i++) {
+  singleTask[i].onclick = function checkedTaskEl() {
+   this.classList.toggle('todo__item--checked');
   }
 };
 };
